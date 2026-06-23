@@ -1,5 +1,6 @@
 import { Events, Listener } from '@sapphire/framework';
 import type { Client } from 'discord.js';
+import { startPoller } from '../lib/watch';
 
 export class ReadyListener extends Listener<typeof Events.ClientReady> {
   public constructor(context: Listener.LoaderContext, options: Listener.Options) {
@@ -13,5 +14,6 @@ export class ReadyListener extends Listener<typeof Events.ClientReady> {
   public run(client: Client<true>) {
     const { username, id } = client.user;
     this.container.logger.info(`Ready! Logged in as ${username} (${id}) serving ${client.guilds.cache.size} guild(s).`);
+    startPoller();
   }
 }

@@ -15,10 +15,13 @@
   "dependencies": {
     "@sapphire/framework": "^5.3.1",
     "discord.js": "^14.16.3",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "jose": "^6.2.3",
+    "sql.js": "^1.14.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.5",
+    "@types/sql.js": "^1.4.11",
     "prettier": "^3.4.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"

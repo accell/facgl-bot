@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/node": "^22.10.5",
     "@types/sql.js": "^1.4.11",
-    "prettier": "^3.4.2",
+    "prettier": "^3.9.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   },
